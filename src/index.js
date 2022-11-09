@@ -1,17 +1,16 @@
-import Koa from "koa";
+import mount from "koa-mount";
+import Koa from "koa-graphql";
 
 const app = new Koa();
-const PORT = 3000;
 
-app.use(async (ctx) => {
-  ctx.body = {
-    status: "success",
-    message: "hello, world!",
-  };
-});
+app.use(
+  mount(
+    "/graphql",
+    graphqlHTTP({
+      schema: MyGraphQLSchema,
+      graphiql: true,
+    })
+  )
+);
 
-export const server = app.listen(PORT, () => {
-  console.log(`Server listening on port: ${PORT}`);
-});
-
-// new code thing
+app.listen(4000);

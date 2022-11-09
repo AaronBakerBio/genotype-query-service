@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/finkbeiner-lab/genotype-query-service#readme",
   "dependencies": {
-    "koa": "^2.13.4"
+    "koa-graphql": "^0.12.0",
+    "koa-mount": "^4.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
   }
 }
