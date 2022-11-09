@@ -1,0 +1,24 @@
+{
+  "name": "genotype-query-service",
+  "version": "0.0.1",
+  "description": "REST API for querying sparse-encoded VCF data hosted in an SQL database",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finkbeiner-lab/genotype-query-service.git"
+  },
+  "author": "Answer ALS Consortium",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finkbeiner-lab/genotype-query-service/issues"
+  },
+  "homepage": "https://github.com/finkbeiner-lab/genotype-query-service#readme",
+  "dependencies": {
+    "koa": "^2.13.4"
+  }
+}
